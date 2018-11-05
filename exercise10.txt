@@ -1,0 +1,17 @@
+a = []
+b = []
+for i in range (10):
+    numberi=random.randint(1,10)
+    a.append(numberi)
+print(a)
+for ii in range (15):
+    numberii=random.randint(1,10)
+    b.append(numberii) 
+print(b)    
+
+c = []
+for item in b:
+    if item in a:
+        if item not in c:
+            c.append(item)
+print(c)
