@@ -1,0 +1,43 @@
+import random
+def random_list(length):
+    List = []
+    for i in range(length):
+        ii= random.randint(1,100)
+        List.append(ii)
+    return List
+a = random_list(10)
+print(a)
+b= random_list(5)
+print(b)
+c = []
+def append_item(index1,index2):
+    
+    c.append(a[index1])
+    c.append(a[index2])
+        
+append_item(0,(len(a)-1))    
+
+print(c)
+
+
+
+""" next exercise"""
+def fibo_number():
+    number_range = int(input("how many number you would like to generate: "))
+    Fi_number=[0]
+    i =1
+    if number_range==1:
+        Fi_number=[1]
+        
+    if number_range==2:
+        Fi_number=[1,1]
+       
+    if number_range>2:
+        Fi_number=[1,1]
+        while i<(number_range-1):
+            Fi_number.append(Fi_number[i]+Fi_number[i-1])
+            i+=1
+    return Fi_number
+            
+                
+print(fibo_number())
